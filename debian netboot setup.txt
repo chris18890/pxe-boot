@@ -1,0 +1,45 @@
+cd /srv/tftp; sudo rm -rf *
+
+sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
+
+sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.efi
+
+sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
+
+sudo rm -rf netboot.tar.gz; sudo wget https://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
+
+sudo rm -rf pxelinux.cfg; sudo cp -r ubuntu-installer/amd64/pxelinux.cfg pxelinux.cfg
+
+sudo rm pxelinux.cfg/default; sudo touch pxelinux.cfg/default; sudo nano pxelinux.cfg/default
+
+# D-I config version 2.0
+# search path for the c32 support libraries (libcom32, libutil etc.)
+path boot-screens/
+include boot-screens/menu.cfg
+default boot-screens/vesamenu.c32
+prompt 0
+timeout 0
+
+sudo git clone https://github.com/chris18890/boot-screens.git
+
+sudo wget https://boot.netboot.xyz/memdisk
+
+sudo wget https://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir avg; sudo mv avg_arl_cdi_all_120_*.iso avg/avg_arl.iso
+
+sudo wget https://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir dban; sudo mv dban-*.iso dban/dban.iso
+
+sudo wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir memtest; sudo mv memtest86-5.01.bin memtest/memtest
+
+sudo wget https://pogostick.net/~pnh/ntpasswd/cd140201.zip
+
+sudo unzip cd140201.zip; sudo mkdir pogostick; sudo mv cd140201.iso pogostick; sudo rm cd140201.zip
+
+sudo mkdir ubuntu-live/; cd ubuntu-live/
+
+sudo wget https://releases.ubuntu.com/focal/ubuntu-20.04.6-desktop-amd64.iso; sudo mkdir focal; sudo mount -o loop ubuntu-20.04.6-desktop-amd64.iso focal
+
+sudo wget https://releases.ubuntu.com/jammy/ubuntu-22.04.5-desktop-amd64.iso; sudo mkdir jammy; sudo mount -o loop ubuntu-22.04.5-desktop-amd64.iso jammy
+
+sudo wget https://releases.ubuntu.com/noble/ubuntu-24.04.1-desktop-amd64.iso; sudo mkdir noble; sudo mount -o loop ubuntu-24.04.1-desktop-amd64.iso noble
+
+cd
