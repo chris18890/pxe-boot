@@ -1,0 +1,23 @@
+sudo rm -rf netboot.tar.gz ubuntu-*.iso /srv/tftp/ubuntu-* /srv/tftp/version.info
+
+rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-i386/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /srv/tftp/ && rm -rf netboot.tar.gz
+
+rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-amd64/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /srv/tftp/ && rm -rf netboot.tar.gz
+
+sudo rm -rf /srv/tftp/pxelinux.cfg && sudo cp -r /srv/tftp/ubuntu-installer/i386/pxelinux.cfg /srv/tftp/pxelinux.cfg && sudo nano /srv/tftp/pxelinux.cfg/default
+
+
+# D-I config version 2.0
+include boot-screens/menu.cfg
+default boot-screens/vesamenu.c32
+prompt 0
+timeout 0
+
+
+sudo mkdir /srv/tftp/ubuntu-live/
+
+cd /srv/tftp/ubuntu-live/ && sudo wget http://releases.ubuntu.com/vivid/ubuntu-15.04-desktop-i386.iso && sudo mkdir vivid && sudo mount -o loop ubuntu-15.04-desktop-i386.iso vivid
+
+cd /srv/tftp/ubuntu-live/ && sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso && sudo mkdir trusty && sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
+
+cd /srv/tftp/ubuntu-live/ && sudo wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso && sudo mkdir precise && sudo mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
