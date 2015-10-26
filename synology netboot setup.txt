@@ -1,8 +1,8 @@
 rm -rf netboot.tar.gz ubuntu-*.iso /volume1/pxe/ubuntu-* /volume1/pxe/version.info
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-i386/current/images/netboot/netboot.tar.gz && tar -xvzf netboot.tar.gz -C /volume1/pxe/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz && tar -xvzf netboot.tar.gz -C /volume1/pxe/ && rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-amd64/current/images/netboot/netboot.tar.gz && tar -xvzf netboot.tar.gz -C /volume1/pxe/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz && tar -xvzf netboot.tar.gz -C /volume1/pxe/ && rm -rf netboot.tar.gz
 
 rm -rf /volume1/pxe/pxelinux.cfg && cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg && vi /volume1/pxe/pxelinux.cfg/default
 
@@ -14,7 +14,7 @@ timeout 0
 
 mkdir /volume1/pxe/ubuntu-live/
 
-cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/vivid/ubuntu-15.04-desktop-i386.iso && mkdir vivid && mount -o loop ubuntu-15.04-desktop-i386.iso vivid
+cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso && mkdir wily && mount -o loop ubuntu-15.10-desktop-i386.iso wily
 
 cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso && mkdir trusty && mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 

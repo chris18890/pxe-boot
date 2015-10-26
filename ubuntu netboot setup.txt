@@ -1,8 +1,8 @@
 sudo rm -rf netboot.tar.gz ubuntu-*.iso /var/lib/tftpboot/ubuntu-* /var/lib/tftpboot/version.info
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-i386/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /var/lib/tftpboot/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /var/lib/tftpboot/ && rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/trusty/main/installer-amd64/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /var/lib/tftpboot/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /var/lib/tftpboot/ && rm -rf netboot.tar.gz
 
 sudo rm -rf /var/lib/tftpboot/pxelinux.cfg && sudo cp -r /var/lib/tftpboot/ubuntu-installer/i386/pxelinux.cfg /var/lib/tftpboot/pxelinux.cfg && sudo nano /var/lib/tftpboot/pxelinux.cfg/default
 
@@ -16,7 +16,7 @@ timeout 0
 
 sudo mkdir /var/lib/tftpboot/ubuntu-live/
 
-cd /var/lib/tftpboot/ubuntu-live/ && sudo wget http://releases.ubuntu.com/vivid/ubuntu-15.04-desktop-i386.iso && sudo mkdir vivid && sudo mount -o loop ubuntu-15.04-desktop-i386.iso vivid
+cd /var/lib/tftpboot/ubuntu-live/ && sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso && sudo mkdir wily && sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
 
 cd /var/lib/tftpboot/ubuntu-live/ && sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso && sudo mkdir trusty && sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 
