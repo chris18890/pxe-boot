@@ -14,6 +14,10 @@ timeout 0
 
 git clone https://github.com/chris18890/boot-screens && sudo cp -r boot-screens/ /var/lib/tftpboot/boot-screens
 
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
+
+sudo mkdir /var/lib/tftpboot/avg && sudo cp avg/isolinux/vmlinuz /var/lib/tftpboot/avg && sudo cp avg/isolinux/initrd.lzm /var/lib/tftpboot/avg
+
 sudo mkdir /var/lib/tftpboot/ubuntu-live/
 
 cd /var/lib/tftpboot/ubuntu-live/ && sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso && sudo mkdir wily && sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
