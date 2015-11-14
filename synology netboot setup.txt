@@ -12,6 +12,8 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
+git clone https://github.com/chris18890/boot-screens && sudo cp -r boot-screens/ /volume1/pxe/boot-screens
+
 mkdir /volume1/pxe/ubuntu-live/
 
 cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso && mkdir wily && mount -o loop ubuntu-15.10-desktop-i386.iso wily
