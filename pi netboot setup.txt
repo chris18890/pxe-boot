@@ -4,7 +4,9 @@ rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/i
 
 rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /srv/tftp/ && rm -rf netboot.tar.gz
 
-sudo rm -rf /srv/tftp/pxelinux.cfg && sudo cp -r /srv/tftp/ubuntu-installer/i386/pxelinux.cfg /srv/tftp/pxelinux.cfg && sudo nano /srv/tftp/pxelinux.cfg/default
+sudo rm -rf /srv/tftp/pxelinux.cfg && sudo cp -r /srv/tftp/ubuntu-installer/i386/pxelinux.cfg /srv/tftp/pxelinux.cfg
+
+sudo rm /srv/tftp/pxelinux.cfg/default && sudo touch /srv/tftp/pxelinux.cfg/default && sudo nano /srv/tftp/pxelinux.cfg/default
 
 
 # D-I config version 2.0
