@@ -7,6 +7,8 @@ rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/i
 sudo rm -rf /var/lib/tftpboot/pxelinux.cfg && sudo cp -r /var/lib/tftpboot/ubuntu-installer/i386/pxelinux.cfg /var/lib/tftpboot/pxelinux.cfg && sudo nano /var/lib/tftpboot/pxelinux.cfg/default
 
 # D-I config version 2.0
+# search path for the c32 support libraries (libcom32, libutil etc.)
+path boot-screens/
 include boot-screens/menu.cfg
 default boot-screens/vesamenu.c32
 prompt 0
