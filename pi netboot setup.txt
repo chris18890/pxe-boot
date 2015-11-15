@@ -22,6 +22,8 @@ mkdir gparted; unzip gparted-live-*.zip gparted/
 
 sudo cp gparted/live/{vmlinuz,initrd.img} /srv/tftp/gparted && sudo cp gparted/live/filesystem.squashfs /var/www/gparted/
 
+sudo cp gparted/live/memtest /srv/tftp/memtest/
+
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip && unzip cd140201.zip && mkdir pogostick && sudo mount -o loop cd140201.iso pogostick && sudo cp -r pogostick/ /srv/tftp/pogostick
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
