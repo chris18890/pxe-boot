@@ -28,7 +28,7 @@ sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/
 
 sudo mkdir /var/lib/tftpboot/memtest; sudo cp gparted/live/memtest /var/lib/tftpboot/memtest
 
-wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir pogostick; sudo mount -o loop cd140201.iso pogostick; sudo cp -r pogostick/ /var/lib/tftpboot/pogostick
+wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir pogostick; sudo mount -o loop cd140201.iso pogostick; sudo mkdir /var/lib/tftpboot/pogostick; sudo cp -r pogostick/ /var/lib/tftpboot/pogostick
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir avg; sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
 
