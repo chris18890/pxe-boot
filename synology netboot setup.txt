@@ -12,11 +12,11 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-git clone https://github.com/chris18890/boot-screens && sudo cp -r boot-screens/ /volume1/pxe/boot-screens
+git clone https://github.com/chris18890/boot-screens && cp -r boot-screens/ /volume1/pxe/boot-screens
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
 
-sudo mkdir /volume1/pxe/avg && sudo cp avg/isolinux/vmlinuz /volume1/pxe/avg && sudo cp avg/isolinux/initrd.lzm /volume1/pxe/avg
+mkdir /volume1/pxe/avg && cp avg/isolinux/vmlinuz /volume1/pxe/avg && cp avg/isolinux/initrd.lzm /volume1/pxe/avg
 
 mkdir /volume1/pxe/ubuntu-live/
 
