@@ -24,7 +24,7 @@ mkdir /volume1/pxe/gparted; cp gparted/live/{vmlinuz,initrd.img} /volume1/pxe/gp
 
 mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted
 
-cp gparted/live/memtest /volume1/pxe/memtest/
+mkdir /volume1/pxe/memtest; cp gparted/live/memtest /volume1/pxe/memtest
 
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip && unzip cd140201.zip && mkdir pogostick && mount -o loop cd140201.iso pogostick && cp -r pogostick/ /volume1/pxe/pogostick
 

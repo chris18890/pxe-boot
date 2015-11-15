@@ -26,7 +26,7 @@ sudo mkdir /var/lib/tftpboot/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} 
 
 sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted
 
-sudo cp gparted/live/memtest /srv/tftp/memtest/
+sudo mkdir /srv/tftp/memtest; sudo cp gparted/live/memtest /srv/tftp/memtest
 
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip && unzip cd140201.zip && mkdir pogostick && sudo mount -o loop cd140201.iso pogostick && sudo cp -r pogostick/ /srv/tftp/pogostick
 
