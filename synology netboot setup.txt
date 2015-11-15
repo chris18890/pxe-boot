@@ -16,11 +16,13 @@ timeout 0
 
 git clone https://github.com/chris18890/boot-screens.git && cp -r boot-screens/ /volume1/pxe/boot-screens
 
-wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip/download
+wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip
 
-mkdir gparted; unzip gparted-live-*.zip gparted/
+mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
-cp gparted/live/{vmlinuz,initrd.img} /volume1/pxe/gparted && cp gparted/live/filesystem.squashfs /volume1/web/gparted/
+mkdir /volume1/pxe/gparted; cp gparted/live/{vmlinuz,initrd.img} /volume1/pxe/gparted
+
+mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted
 
 cp gparted/live/memtest /volume1/pxe/memtest/
 

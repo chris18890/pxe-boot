@@ -18,11 +18,13 @@ timeout 0
 
 git clone https://github.com/chris18890/boot-screens.git && sudo cp -r boot-screens/ /var/lib/tftpboot/boot-screens
 
-wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip/download
+wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip
 
-mkdir gparted; unzip gparted-live-*.zip gparted/
+mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
-sudo cp gparted/live/{vmlinuz,initrd.img} /var/lib/tftpboot/gparted && sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted/
+sudo mkdir /var/lib/tftpboot/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} /var/lib/tftpboot/gparted
+
+sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted
 
 sudo cp gparted/live/memtest /var/lib/tftpboot/memtest/
 
