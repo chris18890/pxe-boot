@@ -20,7 +20,7 @@ wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
-mkdir /volume1/pxe/gparted; cp gparted/live/{vmlinuz,initrd.img} /volume1/pxe/gparted
+mkdir /volume1/pxe/gparted; cp gparted/live/vmlinuz /volume1/pxe/gparted; cp gparted/live/initrd.img /volume1/pxe/gparted
 
 mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted
 
@@ -30,7 +30,7 @@ wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir 
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir avg; mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
 
-mkdir /volume1/pxe/avg; cp avg/isolinux/{vmlinuz,initrd.lzm} /volume1/pxe/avg/
+mkdir /volume1/pxe/avg; cp avg/isolinux/vmlinuz /volume1/pxe/avg/; cp avg/isolinux/initrd.lzm /volume1/pxe/avg/
 
 mkdir /volume1/pxe/ubuntu-live/
 
