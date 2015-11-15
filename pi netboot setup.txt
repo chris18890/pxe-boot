@@ -20,7 +20,7 @@ wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/
 
 mkdir gparted; unzip gparted-live-*.zip gparted/
 
-sudo cp gparted/live/{vmlinuz,initrd.img} /srv/tftp/gparted && sudo cp gparted/live/filesystem.squashfs /var/www/gparted/
+sudo cp gparted/live/{vmlinuz,initrd.img} /srv/tftp/gparted && sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted/
 
 sudo cp gparted/live/memtest /srv/tftp/memtest/
 
