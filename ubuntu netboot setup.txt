@@ -14,6 +14,12 @@ timeout 0
 
 git clone https://github.com/chris18890/boot-screens && sudo cp -r boot-screens/ /var/lib/tftpboot/boot-screens
 
+wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip/download
+
+mkdir gparted; unzip gparted-live-*.zip gparted/
+
+sudo cp gparted/live/{vmlinuz,initrd.img} /var/lib/tftpboot/gparted && sudo cp gparted/live/filesystem.squashfs /var/www/gparted/
+
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip && unzip cd140201.zip && mkdir pogostick && sudo mount -o loop cd140201.iso pogostick && sudo cp -r pogostick/ /var/lib/tftpboot/pogostick
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
