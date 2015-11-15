@@ -4,7 +4,9 @@ rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/i
 
 rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /var/lib/tftpboot/ && rm -rf netboot.tar.gz
 
-sudo rm -rf /var/lib/tftpboot/pxelinux.cfg && sudo cp -r /var/lib/tftpboot/ubuntu-installer/i386/pxelinux.cfg /var/lib/tftpboot/pxelinux.cfg && sudo nano /var/lib/tftpboot/pxelinux.cfg/default
+sudo rm -rf /var/lib/tftpboot/pxelinux.cfg && sudo cp -r /var/lib/tftpboot/ubuntu-installer/i386/pxelinux.cfg /var/lib/tftpboot/pxelinux.cfg
+
+sudo rm /var/lib/tftpboot/pxelinux.cfg/default && sudo touch /var/lib/tftpboot/pxelinux.cfg/default && sudo nano /var/lib/tftpboot/pxelinux.cfg/default
 
 # D-I config version 2.0
 # search path for the c32 support libraries (libcom32, libutil etc.)
