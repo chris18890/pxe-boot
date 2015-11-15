@@ -1,12 +1,12 @@
 sudo rm -rf netboot.tar.gz ubuntu-*.iso /srv/tftp/ubuntu-* /srv/tftp/version.info
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /srv/tftp/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz && sudo tar -xvzf netboot.tar.gz -C /srv/tftp/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
 
-sudo rm -rf /srv/tftp/pxelinux.cfg && sudo cp -r /srv/tftp/ubuntu-installer/i386/pxelinux.cfg /srv/tftp/pxelinux.cfg
+sudo rm -rf /srv/tftp/pxelinux.cfg; sudo cp -r /srv/tftp/ubuntu-installer/i386/pxelinux.cfg /srv/tftp/pxelinux.cfg
 
-sudo rm /srv/tftp/pxelinux.cfg/default && sudo touch /srv/tftp/pxelinux.cfg/default && sudo nano /srv/tftp/pxelinux.cfg/default
+sudo rm /srv/tftp/pxelinux.cfg/default; sudo touch /srv/tftp/pxelinux.cfg/default; sudo nano /srv/tftp/pxelinux.cfg/default
 
 # D-I config version 2.0
 # search path for the c32 support libraries (libcom32, libutil etc.)
@@ -16,7 +16,7 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-git clone https://github.com/chris18890/boot-screens.git && sudo cp -r boot-screens/ /srv/tftp/boot-screens
+git clone https://github.com/chris18890/boot-screens.git; sudo cp -r boot-screens/ /srv/tftp/boot-screens
 
 wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip
 
@@ -28,16 +28,16 @@ sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/
 
 sudo mkdir /srv/tftp/memtest; sudo cp gparted/live/memtest /srv/tftp/memtest
 
-wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip && unzip cd140201.zip && mkdir pogostick && sudo mount -o loop cd140201.iso pogostick && sudo cp -r pogostick/ /srv/tftp/pogostick
+wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir pogostick; sudo mount -o loop cd140201.iso pogostick; sudo cp -r pogostick/ /srv/tftp/pogostick
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir avg; sudo mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
 
-sudo mkdir /srv/tftp/avg && sudo cp avg/isolinux/{vmlinuz,initrd.lzm} /srv/tftp/avg/
+sudo mkdir /srv/tftp/avg; sudo cp avg/isolinux/{vmlinuz,initrd.lzm} /srv/tftp/avg/
 
 sudo mkdir /srv/tftp/ubuntu-live/
 
-cd /srv/tftp/ubuntu-live/ && sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso && sudo mkdir wily && sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
+cd /srv/tftp/ubuntu-live/; sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; sudo mkdir wily; sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
 
-cd /srv/tftp/ubuntu-live/ && sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso && sudo mkdir trusty && sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
+cd /srv/tftp/ubuntu-live/; sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; sudo mkdir trusty; sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 
-cd /srv/tftp/ubuntu-live/ && sudo wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso && sudo mkdir precise && sudo mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
+cd /srv/tftp/ubuntu-live/; sudo wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; sudo mkdir precise; sudo mount -o loop ubuntu-12.04.5-desktop-i386.iso precise

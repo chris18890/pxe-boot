@@ -1,10 +1,10 @@
 rm -rf netboot.tar.gz ubuntu-*.iso /volume1/pxe/ubuntu-* /volume1/pxe/version.info
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz && tar -xvzf netboot.tar.gz -C /volume1/pxe/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz && wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz && tar -xvzf netboot.tar.gz -C /volume1/pxe/ && rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
 
-rm -rf /volume1/pxe/pxelinux.cfg && cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg && vi /volume1/pxe/pxelinux.cfg/default
+rm -rf /volume1/pxe/pxelinux.cfg; cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg; vi /volume1/pxe/pxelinux.cfg/default
 
 # D-I config version 2.0
 # search path for the c32 support libraries (libcom32, libutil etc.)
@@ -14,7 +14,7 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-git clone https://github.com/chris18890/boot-screens.git && cp -r boot-screens/ /volume1/pxe/boot-screens
+git clone https://github.com/chris18890/boot-screens.git; cp -r boot-screens/ /volume1/pxe/boot-screens
 
 wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip
 
@@ -26,16 +26,16 @@ mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gpa
 
 mkdir /volume1/pxe/memtest; cp gparted/live/memtest /volume1/pxe/memtest
 
-wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip && unzip cd140201.zip && mkdir pogostick && mount -o loop cd140201.iso pogostick && cp -r pogostick/ /volume1/pxe/pogostick
+wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir pogostick; mount -o loop cd140201.iso pogostick; cp -r pogostick/ /volume1/pxe/pogostick
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso && mkdir avg && mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir avg; mount -o loop avg_arl_cdi_all_120_150814a10442.iso avg
 
-mkdir /volume1/pxe/avg && cp avg/isolinux/{vmlinuz,initrd.lzm} /volume1/pxe/avg/
+mkdir /volume1/pxe/avg; cp avg/isolinux/{vmlinuz,initrd.lzm} /volume1/pxe/avg/
 
 mkdir /volume1/pxe/ubuntu-live/
 
-cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso && mkdir wily && mount -o loop ubuntu-15.10-desktop-i386.iso wily
+cd /volume1/pxe/ubuntu-live/; wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; mkdir wily; mount -o loop ubuntu-15.10-desktop-i386.iso wily
 
-cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso && mkdir trusty && mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
+cd /volume1/pxe/ubuntu-live/; wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; mkdir trusty; mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 
-cd /volume1/pxe/ubuntu-live/ && wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso && mkdir precise && mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
+cd /volume1/pxe/ubuntu-live/; wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; mkdir precise; mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
