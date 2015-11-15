@@ -12,7 +12,7 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-git clone https://github.com/chris18890/boot-screens && cp -r boot-screens/ /volume1/pxe/boot-screens
+git clone https://github.com/chris18890/boot-screens.git && cp -r boot-screens/ /volume1/pxe/boot-screens
 
 wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip/download
 
