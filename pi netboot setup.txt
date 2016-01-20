@@ -22,7 +22,7 @@ wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
-sudo mkdir /var/lib/tftpboot/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} /srv/tftp/gparted
+sudo mkdir /srv/tftp/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} /srv/tftp/gparted
 
 sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted
 
