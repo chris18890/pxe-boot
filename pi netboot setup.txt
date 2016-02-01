@@ -1,5 +1,7 @@
 sudo rm -rf netboot.tar.gz ubuntu-*.iso /srv/tftp/ubuntu-* /srv/tftp/version.info
 
+wget https://boot.netboot.xyz/ipxe/netboot.xyz-dhcp.kpxe; sudo cp netboot.xyz-dhcp.kpxe /srv/tftp/
+
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
 
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz

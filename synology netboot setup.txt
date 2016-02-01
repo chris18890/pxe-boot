@@ -1,5 +1,7 @@
 rm -rf netboot.tar.gz ubuntu-*.iso /volume1/pxe/ubuntu-* /volume1/pxe/version.info
 
+wget https://boot.netboot.xyz/ipxe/netboot.xyz-dhcp.kpxe; cp netboot.xyz-dhcp.kpxe /volume1/pxe/
+
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
 
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
