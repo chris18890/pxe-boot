@@ -22,6 +22,18 @@ git clone https://github.com/chris18890/boot-screens.git; sudo cp -r boot-screen
 
 wget https://boot.netboot.xyz/memdisk; sudo cp memdisk /var/lib/tftpboot/
 
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; sudo mkdir /var/lib/tftpboot/avg; sudo cp avg_arl_cdi_all_120_150814a10442.iso /var/lib/tftpboot/avg
+
+wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
+
+mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
+
+sudo mkdir /var/lib/tftpboot/clonezilla; sudo cp clonezilla/live/{vmlinuz,initrd.img} /var/lib/tftpboot/clonezilla
+
+sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla
+
+wget http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir /var/lib/tftpboot/dban; sudo cp dban-2.3.0_i586.iso /var/lib/tftpboot/dban
+
 wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.25.0-1/gparted-live-0.25.0-1-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
@@ -32,19 +44,7 @@ sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/
 
 wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir /var/lib/tftpboot/memtest; sudo cp memtest86-5.01.bin /var/lib/tftpboot/memtest/memtest
 
-wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
-
-mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
-
-sudo mkdir /var/lib/tftpboot/clonezilla; sudo cp clonezilla/live/{vmlinuz,initrd.img} /var/lib/tftpboot/clonezilla
-
-sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla
-
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; sudo mkdir /var/lib/tftpboot/pogostick; sudo cp cd140201.iso /var/lib/tftpboot/pogostick
-
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; sudo mkdir /var/lib/tftpboot/avg; sudo cp avg_arl_cdi_all_120_150814a10442.iso /var/lib/tftpboot/avg
-
-wget http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir /var/lib/tftpboot/dban; sudo cp dban-2.3.0_i586.iso /var/lib/tftpboot/dban
 
 sudo mkdir /var/lib/tftpboot/ubuntu-live/
 

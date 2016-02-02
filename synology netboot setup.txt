@@ -20,6 +20,18 @@ git clone https://github.com/chris18890/boot-screens.git; cp -r boot-screens/ /v
 
 wget https://boot.netboot.xyz/memdisk; cp memdisk /volume1/pxe/
 
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir /volume1/pxe/avg; cp avg_arl_cdi_all_120_150814a10442.iso /volume1/pxe/avg
+
+wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
+
+mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
+
+mkdir /volume1/pxe/clonezilla; cp clonezilla/live/vmlinuz /volume1/pxe/clonezilla; cp clonezilla/live/initrd.img /volume1/pxe/clonezilla
+
+mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla
+
+wget http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir /volume1/pxe/dban; cp dban-2.3.0_i586.iso /volume1/pxe/dban
+
 wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.25.0-1/gparted-live-0.25.0-1-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
@@ -30,19 +42,7 @@ mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gpa
 
 wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; mkdir /volume1/pxe/memtest; cp memtest86-5.01.bin /volume1/pxe/memtest/memtest
 
-wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
-
-mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
-
-mkdir /volume1/pxe/clonezilla; cp clonezilla/live/vmlinuz /volume1/pxe/clonezilla; cp clonezilla/live/initrd.img /volume1/pxe/clonezilla
-
-mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla
-
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir /volume1/pxe/pogostick; cp cd140201.iso /volume1/pxe/pogostick
-
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir /volume1/pxe/avg; cp avg_arl_cdi_all_120_150814a10442.iso /volume1/pxe/avg
-
-wget http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir /volume1/pxe/dban; cp dban-2.3.0_i586.iso /volume1/pxe/dban
 
 mkdir /volume1/pxe/ubuntu-live/
 
