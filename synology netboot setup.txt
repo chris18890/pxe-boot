@@ -26,7 +26,7 @@ mkdir /volume1/pxe/gparted; cp gparted/live/vmlinuz /volume1/pxe/gparted; cp gpa
 
 mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted
 
-mkdir /volume1/pxe/memtest; cp gparted/live/memtest /volume1/pxe/memtest
+wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; mkdir /volume1/pxe/memtest; cp memtest86-5.01.bin /volume1/pxe/memtest/memtest
 
 wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
 

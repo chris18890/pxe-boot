@@ -28,7 +28,7 @@ sudo mkdir /var/lib/tftpboot/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} 
 
 sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted
 
-sudo mkdir /var/lib/tftpboot/memtest; sudo cp gparted/live/memtest /var/lib/tftpboot/memtest
+wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir /var/lib/tftpboot/memtest; sudo cp memtest86-5.01.bin /var/lib/tftpboot/memtest/memtest
 
 wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
 
