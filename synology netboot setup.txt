@@ -20,7 +20,7 @@ git clone https://github.com/chris18890/boot-screens.git; cp -r boot-screens/ /v
 
 wget https://boot.netboot.xyz/memdisk; cp memdisk /volume1/pxe/
 
-wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.24.0-2/gparted-live-0.24.0-2-i586.zip
+wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.25.0-1/gparted-live-0.25.0-1-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
