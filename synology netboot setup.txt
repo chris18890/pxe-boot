@@ -46,10 +46,10 @@ wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; mkdir /volume1/pxe/memte
 
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir /volume1/pxe/pogostick; cp cd140201.iso /volume1/pxe/pogostick
 
-mkdir /volume1/pxe/ubuntu-live/
+mkdir /volume1/pxe/ubuntu-live/; cd /volume1/pxe/ubuntu-live/
 
-cd /volume1/pxe/ubuntu-live/; wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; mkdir wily; mount -o loop ubuntu-15.10-desktop-i386.iso wily
+wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; mkdir wily; mount -o loop ubuntu-15.10-desktop-i386.iso wily
 
-cd /volume1/pxe/ubuntu-live/; wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; mkdir trusty; mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
+wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; mkdir trusty; mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 
-cd /volume1/pxe/ubuntu-live/; wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; mkdir precise; mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
+wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; mkdir precise; mount -o loop ubuntu-12.04.5-desktop-i386.iso precise

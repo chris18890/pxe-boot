@@ -48,10 +48,10 @@ wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir /var/lib/tftp
 
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; sudo mkdir /var/lib/tftpboot/pogostick; sudo cp cd140201.iso /var/lib/tftpboot/pogostick
 
-sudo mkdir /var/lib/tftpboot/ubuntu-live/
+sudo mkdir /var/lib/tftpboot/ubuntu-live/; cd /var/lib/tftpboot/ubuntu-live/
 
-cd /var/lib/tftpboot/ubuntu-live/; sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; sudo mkdir wily; sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
+sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; sudo mkdir wily; sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
 
-cd /var/lib/tftpboot/ubuntu-live/; sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; sudo mkdir trusty; sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
+sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; sudo mkdir trusty; sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 
-cd /var/lib/tftpboot/ubuntu-live/; sudo wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; sudo mkdir precise; sudo mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
+sudo wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; sudo mkdir precise; sudo mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
