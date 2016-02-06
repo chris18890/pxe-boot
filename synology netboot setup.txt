@@ -24,7 +24,7 @@ wget https://boot.netboot.xyz/memdisk; cp memdisk /volume1/pxe/
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir /volume1/pxe/avg; cp avg_arl_cdi_all_120_150814a10442.iso /volume1/pxe/avg
 
-wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.2-61/clonezilla-live-2.4.2-61-i586.zip
+wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.5-20/clonezilla-live-2.4.5-20-i686.zip
 
 mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
 
