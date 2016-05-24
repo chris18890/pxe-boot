@@ -4,9 +4,9 @@ wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; cp netboot.xyz.kpxe /volume
 
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn; cp netboot.xyz.lkrn /volume1/pxe/
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-i386/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
 
 rm -rf /volume1/pxe/pxelinux.cfg; cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg; vi /volume1/pxe/pxelinux.cfg/default
 
@@ -50,7 +50,7 @@ wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; mkdir 
 
 mkdir /volume1/pxe/ubuntu-live/; cd /volume1/pxe/ubuntu-live/
 
-wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; mkdir wily; mount -o loop ubuntu-15.10-desktop-i386.iso wily
+wget http://releases.ubuntu.com/xenial/ubuntu-16.04-desktop-i386.iso; mkdir xenial; mount -o loop ubuntu-16.04-desktop-i386.iso xenial
 
 wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; mkdir trusty; mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 

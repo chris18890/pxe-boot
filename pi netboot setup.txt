@@ -4,9 +4,9 @@ wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; sudo cp netboot.xyz.kpxe /s
 
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn; sudo cp netboot.xyz.lkrn /srv/tftp/
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/wily/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /srv/tftp/; rm -rf netboot.tar.gz
 
 sudo rm -rf /srv/tftp/pxelinux.cfg; sudo cp -r /srv/tftp/ubuntu-installer/i386/pxelinux.cfg /srv/tftp/pxelinux.cfg
 
@@ -52,7 +52,7 @@ wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; sudo m
 
 sudo mkdir /srv/tftp/ubuntu-live/; cd /srv/tftp/ubuntu-live/
 
-sudo wget http://releases.ubuntu.com/wily/ubuntu-15.10-desktop-i386.iso; sudo mkdir wily; sudo mount -o loop ubuntu-15.10-desktop-i386.iso wily
+sudo wget http://releases.ubuntu.com/xenial/ubuntu-16.04-desktop-i386.iso; sudo mkdir xenial; sudo mount -o loop ubuntu-16.04-desktop-i386.iso xenial
 
 sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.3-desktop-i386.iso; sudo mkdir trusty; sudo mount -o loop ubuntu-14.04.3-desktop-i386.iso trusty
 
