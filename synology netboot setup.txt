@@ -36,7 +36,7 @@ mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/w
 
 wget http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir /volume1/pxe/dban; cp dban-2.3.0_i586.iso /volume1/pxe/dban
 
-wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.25.0-1/gparted-live-0.25.0-1-i686.zip
+wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.26.0-2/gparted-live-0.26.0-2-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
