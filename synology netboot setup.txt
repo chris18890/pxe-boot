@@ -26,7 +26,7 @@ wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip; unzip wimboot-late
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir /volume1/pxe/avg; cp avg_arl_cdi_all_120_150814a10442.iso /volume1/pxe/avg/avg_arl.iso
 
-wget http://sourceforge.net/projects/clonezilla/files/clonezilla_live_stable/2.4.5-23/clonezilla-live-2.4.5-23-i686.zip
+wget http://downloads.sourceforge.net/project/clonezilla/files/clonezilla_live_stable/2.4.5-23/clonezilla-live-2.4.5-23-i686.zip
 
 mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
 
@@ -34,9 +34,9 @@ mkdir /volume1/pxe/clonezilla; cp clonezilla/live/vmlinuz /volume1/pxe/clonezill
 
 mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla
 
-wget http://sourceforge.net/projects/dban/files/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir /volume1/pxe/dban; cp dban-2.3.0_i586.iso /volume1/pxe/dban/dban.iso
+wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir /volume1/pxe/dban; cp dban-2.3.0_i586.iso /volume1/pxe/dban/dban.iso
 
-wget http://sourceforge.net/projects/gparted/files/gparted-live-stable/0.26.0-2/gparted-live-0.26.0-2-i686.zip
+wget http://downloads.sourceforge.net/project/gparted/files/gparted-live-stable/0.26.0-2/gparted-live-0.26.0-2-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
