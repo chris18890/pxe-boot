@@ -22,7 +22,7 @@ timeout 0
 
 cd /volume1/pxe
 
-git clone https://github.com/chris18890/boot-screens.git; cp -r boot-screens/ /volume1/pxe/boot-screens
+wget https://github.com/chris18890/boot-screens/archive/master.zip;
 
 wget https://boot.netboot.xyz/memdisk; cp memdisk /volume1/pxe/
 
