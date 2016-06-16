@@ -8,7 +8,9 @@ rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/i
 
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
 
-rm -rf /volume1/pxe/pxelinux.cfg; cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg; vi /volume1/pxe/pxelinux.cfg/default
+rm -rf /volume1/pxe/pxelinux.cfg; cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg;
+
+rm /volume1/pxe/pxelinux.cfg/default; touch /volume1/pxe/pxelinux.cfg/default; vi /volume1/pxe/pxelinux.cfg/default
 
 # D-I config version 2.0
 # search path for the c32 support libraries (libcom32, libutil etc.)
