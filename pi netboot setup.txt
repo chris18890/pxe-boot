@@ -38,7 +38,7 @@ sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs
 
 wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir /srv/tftp/dban; sudo cp dban-2.3.0_i586.iso /srv/tftp/dban/dban.iso
 
-wget http://downloads.sourceforge.net/project/gparted/files/gparted-live-stable/0.26.0-2/gparted-live-0.26.0-2-i686.zip
+wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.26.0-2/gparted-live-0.26.0-2-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
