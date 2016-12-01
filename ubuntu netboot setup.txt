@@ -38,7 +38,7 @@ sudo mkdir /var/lib/tftpboot/clonezilla; sudo cp clonezilla/live/{vmlinuz,initrd
 
 sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla
 
-wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.26.0-2/gparted-live-0.26.0-2-i686.zip
+wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.27.0-1/gparted-live-0.27.0-1-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
 
