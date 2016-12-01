@@ -30,7 +30,7 @@ wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; 
 
 wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir /volume1/pxe/dban; cp dban-2.3.0_i586.iso /volume1/pxe/dban/dban.iso
 
-wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.4.6-25/clonezilla-live-2.4.6-25-i686.zip
+wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.0-5/clonezilla-live-2.5.0-5-i686.zip
 
 mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
 
