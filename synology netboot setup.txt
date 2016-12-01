@@ -50,8 +50,8 @@ wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip
 
 mkdir ubuntu-live/; cd ubuntu-live/
 
-wget http://releases.ubuntu.com/xenial/ubuntu-16.04-desktop-i386.iso; mkdir xenial; mount -o loop ubuntu-16.04-desktop-i386.iso xenial
+wget http://releases.ubuntu.com/xenial/ubuntu-16.04.1-desktop-i386.iso; mkdir xenial; mount -o loop ubuntu-16.04.1-desktop-i386.iso xenial
 
-wget http://releases.ubuntu.com/trusty/ubuntu-14.04.4-desktop-i386.iso; mkdir trusty; mount -o loop ubuntu-14.04.4-desktop-i386.iso trusty
+wget http://releases.ubuntu.com/trusty/ubuntu-14.04.5-desktop-i386.iso; mkdir trusty; mount -o loop ubuntu-14.04.5-desktop-i386.iso trusty
 
 wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; mkdir precise; mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
