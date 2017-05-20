@@ -28,7 +28,7 @@ wget https://boot.netboot.xyz/memdisk
 
 wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_150814a10442.iso; mkdir avg; cp avg_arl_cdi_all_120_150814a10442.iso avg/avg_arl.iso
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; mkdir avg; cp avg_arl_cdi_all_120_160420a12074.iso avg/avg_arl.iso
 
 wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir dban; cp dban-2.3.0_i586.iso dban/dban.iso
 
