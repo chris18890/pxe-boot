@@ -55,5 +55,3 @@ sudo mkdir /srv/tftp/ubuntu-live/; cd /srv/tftp/ubuntu-live/
 sudo wget http://releases.ubuntu.com/xenial/ubuntu-16.04.2-desktop-i386.iso; sudo mkdir xenial; sudo mount -o loop ubuntu-16.04.2-desktop-i386.iso xenial
 
 sudo wget http://releases.ubuntu.com/trusty/ubuntu-14.04.5-desktop-i386.iso; sudo mkdir trusty; sudo mount -o loop ubuntu-14.04.5-desktop-i386.iso trusty
-
-sudo wget http://releases.ubuntu.com/precise/ubuntu-12.04.5-desktop-i386.iso; sudo mkdir precise; sudo mount -o loop ubuntu-12.04.5-desktop-i386.iso precise
