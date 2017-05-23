@@ -34,13 +34,9 @@ wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i5
 
 wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.0-25/clonezilla-live-2.5.0-25-i686.zip
 
-cp clonezilla/live/vmlinuz clonezilla; cp clonezilla/live/initrd.img clonezilla
-
 mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla
 
 wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.28.1-1/gparted-live-0.28.1-1-i686.zip
-
-cp gparted/live/vmlinuz gparted; cp gparted/live/initrd.img gparted
 
 mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted
 

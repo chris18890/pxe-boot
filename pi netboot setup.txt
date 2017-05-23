@@ -36,15 +36,11 @@ wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/
 
 mkdir clonezilla; unzip clonezilla-live-*.zip -d clonezilla/
 
-sudo mkdir /srv/tftp/clonezilla; sudo cp clonezilla/live/{vmlinuz,initrd.img} /srv/tftp/clonezilla
-
 sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla
 
 wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.28.1-1/gparted-live-0.28.1-1-i686.zip
 
 mkdir gparted; unzip gparted-live-*.zip -d gparted/
-
-sudo mkdir /srv/tftp/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} /srv/tftp/gparted
 
 sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted
 
