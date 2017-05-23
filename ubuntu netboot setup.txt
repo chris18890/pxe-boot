@@ -1,8 +1,8 @@
 sudo rm -rf netboot.tar.gz ubuntu-*.iso /var/lib/tftpboot/ubuntu-* /var/lib/tftpboot/version.info
 
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; sudo cp netboot.xyz.kpxe /var/lib/tftpboot/
+wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; sudo mv netboot.xyz.kpxe /var/lib/tftpboot/
 
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn; sudo cp netboot.xyz.lkrn /var/lib/tftpboot/
+wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn; sudo mv netboot.xyz.lkrn /var/lib/tftpboot/
 
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz -C /var/lib/tftpboot/; rm -rf netboot.tar.gz
 
