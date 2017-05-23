@@ -28,9 +28,9 @@ wget https://boot.netboot.xyz/memdisk
 
 wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip; unzip wimboot-latest.zip -d wimboot/
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir /var/lib/tftpboot/avg; sudo cp avg_arl_cdi_all_120_160420a12074.iso /var/lib/tftpboot/avg/avg_arl.iso
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir avg; sudo cp avg_arl_cdi_all_120_160420a12074.iso avg/avg_arl.iso
 
-wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir /var/lib/tftpboot/dban; cp dban-2.3.0_i586.iso /var/lib/tftpboot/dban/dban.iso
+wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir dban; cp dban-2.3.0_i586.iso dban/dban.iso
 
 wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.0-25/clonezilla-live-2.5.0-25-i686.zip
 
@@ -48,11 +48,11 @@ sudo mkdir /var/lib/tftpboot/gparted; sudo cp gparted/live/{vmlinuz,initrd.img} 
 
 sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted
 
-wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir /var/lib/tftpboot/memtest; sudo cp memtest86-5.01.bin /var/lib/tftpboot/memtest/memtest
+wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir memtest; sudo cp memtest86-5.01.bin memtest/memtest
 
-wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; sudo mkdir /var/lib/tftpboot/pogostick; sudo cp cd140201.iso /var/lib/tftpboot/pogostick
+wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; sudo mkdir pogostick; sudo cp cd140201.iso pogostick
 
-sudo mkdir /var/lib/tftpboot/ubuntu-live/; cd /var/lib/tftpboot/ubuntu-live/
+sudo mkdir ubuntu-live/; cd ubuntu-live/
 
 sudo wget http://releases.ubuntu.com/xenial/ubuntu-16.04.2-desktop-i386.iso; sudo mkdir xenial; sudo mount -o loop ubuntu-16.04.2-desktop-i386.iso xenial
 
