@@ -22,7 +22,7 @@ timeout 0
 
 cd /volume1/pxe
 
-wget https://github.com/chris18890/boot-screens/archive/master.zip;
+wget https://github.com/chris18890/boot-screens/archive/master.zip
 
 wget https://boot.netboot.xyz/memdisk
 

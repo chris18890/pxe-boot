@@ -22,11 +22,11 @@ timeout 0
 
 cd /var/lib/tftpboot
 
-git clone https://github.com/chris18890/boot-screens.git; sudo cp -r boot-screens/ /var/lib/tftpboot/boot-screens
+git clone https://github.com/chris18890/boot-screens.git
 
-wget https://boot.netboot.xyz/memdisk; sudo cp memdisk /var/lib/tftpboot/
+wget https://boot.netboot.xyz/memdisk
 
-wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip; unzip wimboot-latest.zip -d wimboot/ sudo cp wimboot/wimboot-2.5.1-signed/wimboot /var/lib/tftpboot/
+wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip; unzip wimboot-latest.zip -d wimboot/
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir /var/lib/tftpboot/avg; sudo cp avg_arl_cdi_all_120_160420a12074.iso /var/lib/tftpboot/avg/avg_arl.iso
 
