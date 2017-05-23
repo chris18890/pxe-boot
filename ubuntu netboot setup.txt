@@ -20,6 +20,8 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
+cd /var/lib/tftpboot
+
 git clone https://github.com/chris18890/boot-screens.git; sudo cp -r boot-screens/ /var/lib/tftpboot/boot-screens
 
 wget https://boot.netboot.xyz/memdisk; sudo cp memdisk /var/lib/tftpboot/
