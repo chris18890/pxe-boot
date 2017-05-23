@@ -28,9 +28,9 @@ wget https://boot.netboot.xyz/memdisk
 
 wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; mkdir avg; cp avg_arl_cdi_all_120_160420a12074.iso avg/avg_arl.iso
+wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; mkdir avg; mv avg_arl_cdi_all_120_160420a12074.iso avg/avg_arl.iso
 
-wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir dban; cp dban-2.3.0_i586.iso dban/dban.iso
+wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir dban; mv dban-2.3.0_i586.iso dban/dban.iso
 
 wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.0-25/clonezilla-live-2.5.0-25-i686.zip
 
@@ -44,7 +44,7 @@ cp gparted/live/vmlinuz gparted; cp gparted/live/initrd.img gparted
 
 mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted
 
-wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; mkdir memtest; cp memtest86-5.01.bin memtest/memtest
+wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; mkdir memtest; mv memtest86-5.01.bin memtest/memtest
 
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip
 
