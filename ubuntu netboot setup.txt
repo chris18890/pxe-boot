@@ -1,4 +1,6 @@
-sudo rm -rf netboot.tar.gz ubuntu-*.iso /var/lib/tftpboot/ubuntu-* /var/lib/tftpboot/version.info
+cd /var/lib/tftpboot
+
+sudo rm -rf *
 
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; sudo mv netboot.xyz.kpxe /var/lib/tftpboot/
 
@@ -19,8 +21,6 @@ include boot-screens/menu.cfg
 default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
-
-cd /var/lib/tftpboot
 
 git clone https://github.com/chris18890/boot-screens.git
 

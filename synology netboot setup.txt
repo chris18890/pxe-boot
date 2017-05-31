@@ -1,4 +1,6 @@
-rm -rf netboot.tar.gz ubuntu-*.iso /volume1/pxe/ubuntu-* /volume1/pxe/version.info
+cd /volume1/pxe
+
+rm -rf *
 
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; mv netboot.xyz.kpxe /volume1/pxe/
 
@@ -19,8 +21,6 @@ include boot-screens/menu.cfg
 default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
-
-cd /volume1/pxe
 
 wget https://github.com/chris18890/boot-screens/archive/master.zip
 
