@@ -2,17 +2,17 @@ cd /volume1/pxe
 
 rm -rf *
 
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe; mv netboot.xyz.kpxe /volume1/pxe/
+wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
 
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn; mv netboot.xyz.lkrn /volume1/pxe/
+wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-i386/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-i386/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz; rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz -C /volume1/pxe/; rm -rf netboot.tar.gz
+rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz; rm -rf netboot.tar.gz
 
-rm -rf /volume1/pxe/pxelinux.cfg; cp -r /volume1/pxe/ubuntu-installer/i386/pxelinux.cfg /volume1/pxe/pxelinux.cfg;
+rm -rf pxelinux.cfg; cp -r ubuntu-installer/i386/pxelinux.cfg pxelinux.cfg;
 
-rm /volume1/pxe/pxelinux.cfg/default; touch /volume1/pxe/pxelinux.cfg/default; vi /volume1/pxe/pxelinux.cfg/default
+rm pxelinux.cfg/default; touch pxelinux.cfg/default; vi pxelinux.cfg/default
 
 # D-I config version 2.0
 # search path for the c32 support libraries (libcom32, libutil etc.)
