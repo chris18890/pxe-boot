@@ -32,7 +32,7 @@ wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; 
 
 wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir dban; sudo mv dban-*.iso dban/dban.iso
 
-wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.0-25/clonezilla-live-2.5.0-25-amd64.iso; sudo mkdir clonezilla; sudo mv clonezilla-live-*.iso clonezilla/clonezilla.iso
+wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.2-31/clonezilla-live-2.5.2-31-amd64.iso; sudo mkdir clonezilla; sudo mv clonezilla-live-*.iso clonezilla/clonezilla.iso
 
 wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.30.0-1/gparted-live-0.30.0-1-amd64.iso; sudo mkdir gparted; sudo mv gparted-live-*.iso gparted/gparted.iso
 
