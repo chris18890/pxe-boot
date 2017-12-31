@@ -1,6 +1,4 @@
-cd /var/lib/tftpboot
-
-sudo rm -rf *
+cd /var/lib/tftpboot; sudo rm -rf *
 
 sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
 

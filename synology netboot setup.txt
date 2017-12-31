@@ -1,6 +1,4 @@
-cd /volume1/pxe
-
-rm -rf *
+cd /volume1/pxe; rm -rf *
 
 wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
 
