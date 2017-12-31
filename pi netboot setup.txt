@@ -2,13 +2,13 @@ cd /srv/tftp
 
 sudo rm -rf *
 
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
+sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
 
-wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
+sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; rm -rf netboot.tar.gz
+sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
 
-rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; rm -rf netboot.tar.gz
+sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/zesty/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
 
 sudo rm -rf pxelinux.cfg; sudo cp -r ubuntu-installer/i386/pxelinux.cfg pxelinux.cfg
 
@@ -22,23 +22,23 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-git clone https://github.com/chris18890/boot-screens.git
+sudo git clone https://github.com/chris18890/boot-screens.git
 
-wget https://boot.netboot.xyz/memdisk
+sudo wget https://boot.netboot.xyz/memdisk
 
-wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip; unzip wimboot-latest.zip -d wimboot/
+sudo wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip; sudo unzip wimboot-latest.zip -d wimboot/
 
-wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir avg; sudo mv avg_arl_cdi_all_120_*.iso avg/avg_arl.iso
+sudo wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir avg; sudo mv avg_arl_cdi_all_120_*.iso avg/avg_arl.iso
 
-wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir dban; sudo mv dban-*.iso dban/dban.iso
+sudo wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; sudo mkdir dban; sudo mv dban-*.iso dban/dban.iso
 
-wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.2-31/clonezilla-live-2.5.2-31-amd64.iso; sudo mkdir clonezilla; sudo mv clonezilla-live-*.iso clonezilla/clonezilla.iso
+sudo wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.2-31/clonezilla-live-2.5.2-31-amd64.iso; sudo mkdir clonezilla; sudo mv clonezilla-live-*.iso clonezilla/clonezilla.iso
 
-wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.30.0-1/gparted-live-0.30.0-1-amd64.iso; sudo mkdir gparted; sudo mv gparted-live-*.iso gparted/gparted.iso
+sudo wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.30.0-1/gparted-live-0.30.0-1-amd64.iso; sudo mkdir gparted; sudo mv gparted-live-*.iso gparted/gparted.iso
 
-wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir memtest; sudo mv memtest86-5.01.bin memtest/memtest
+sudo wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir memtest; sudo mv memtest86-5.01.bin memtest/memtest
 
-wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; unzip cd140201.zip; sudo mkdir pogostick; sudo mv cd140201.iso pogostick
+sudo wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip; sudo unzip cd140201.zip; sudo mkdir pogostick; sudo mv cd140201.iso pogostick
 
 sudo mkdir ubuntu-live/; cd ubuntu-live/
 
