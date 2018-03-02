@@ -40,4 +40,4 @@ wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip
 
 mkdir ubuntu-live/; cd ubuntu-live/
 
-wget http://releases.ubuntu.com/xenial/ubuntu-16.04.3-desktop-i386.iso; mkdir xenial; mount -o loop ubuntu-16.04.3-desktop-i386.iso xenial
+wget http://releases.ubuntu.com/xenial/ubuntu-16.04.4-desktop-i386.iso; mkdir xenial; mount -o loop ubuntu-16.04.4-desktop-i386.iso xenial
