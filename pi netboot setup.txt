@@ -4,9 +4,9 @@ sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
 
 sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.lkrn
 
-sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
+sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
 
-sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/xenial/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
+sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
 
 sudo rm -rf pxelinux.cfg; sudo cp -r ubuntu-installer/i386/pxelinux.cfg pxelinux.cfg
 
