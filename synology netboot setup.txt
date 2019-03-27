@@ -34,13 +34,13 @@ wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; 
 
 wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i586.iso; mkdir dban; mv dban-*.iso dban/dban.iso
 
-wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.5.6-22/clonezilla-live-2.5.6-22-amd64.zip
+wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.6.0-37/clonezilla-live-2.6.0-37-amd64.zip
 
 # need to manually unzip in explorer & esnure folder is called "clonezilla"
 
 mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla; rm clonezilla-live-*.zip
 
-wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.32.0-1/gparted-live-0.32.0-1-amd64.zip
+wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/0.33.0-2/gparted-live-0.33.0-2-amd64.zip
 
 # need to manually unzip in explorer & esnure folder is called "gparted"
 
