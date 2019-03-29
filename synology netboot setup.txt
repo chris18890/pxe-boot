@@ -8,7 +8,7 @@ rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/bionic/main/i
 
 rm -rf netboot.tar.gz; wget http://archive.ubuntu.com/ubuntu/dists/bionic/main/installer-amd64/current/images/netboot/netboot.tar.gz; tar -xvzf netboot.tar.gz; rm -rf netboot.tar.gz
 
-rm -rf pxelinux.cfg; cp -r ubuntu-installer/i386/pxelinux.cfg pxelinux.cfg;
+rm -rf pxelinux.cfg; cp -r ubuntu-installer/i386/pxelinux.cfg pxelinux.cfg
 
 rm pxelinux.cfg/default; touch pxelinux.cfg/default; vi pxelinux.cfg/default
 
