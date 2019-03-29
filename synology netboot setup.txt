@@ -20,9 +20,7 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-wget https://github.com/chris18890/boot-screens/archive/master.zip
-
-# need to manually unzip in explorer & esnure folder is called "boot-screens"
+wget https://github.com/chris18890/boot-screens/archive/master.zip; # need to manually unzip in explorer & esnure folder is called "boot-screens"
 
 wget https://boot.netboot.xyz/memdisk
 
