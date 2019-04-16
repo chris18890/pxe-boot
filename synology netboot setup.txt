@@ -57,3 +57,5 @@ wget http://releases.ubuntu.com/xenial/ubuntu-16.04.6-desktop-amd64.iso; mkdir x
 wget http://releases.ubuntu.com/bionic/ubuntu-18.04.2-desktop-amd64.iso; mkdir bionic; mount -o loop ubuntu-18.04.2-desktop-amd64.iso bionic
 
 wget http://releases.ubuntu.com/cosmic/ubuntu-18.10-desktop-amd64.iso; mkdir cosmic; mount -o loop ubuntu-18.10-desktop-amd64.iso cosmic
+
+wget http://releases.ubuntu.com/disco/ubuntu-19.04-desktop-amd64.iso; mkdir disco; mount -o loop ubuntu-19.04-desktop-amd64.iso disco
