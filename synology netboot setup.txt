@@ -54,7 +54,7 @@ mkdir ubuntu-live/; cd ubuntu-live/
 
 wget http://releases.ubuntu.com/xenial/ubuntu-16.04.6-desktop-amd64.iso; mkdir xenial; mount -o loop ubuntu-16.04.6-desktop-amd64.iso xenial
 
-wget http://releases.ubuntu.com/bionic/ubuntu-18.04.2-desktop-amd64.iso; mkdir bionic; mount -o loop ubuntu-18.04.2-desktop-amd64.iso bionic
+wget http://releases.ubuntu.com/bionic/ubuntu-18.04.3-desktop-amd64.iso; mkdir bionic; mount -o loop ubuntu-18.04.3-desktop-amd64.iso bionic
 
 wget http://releases.ubuntu.com/disco/ubuntu-19.04-desktop-amd64.iso; mkdir disco; mount -o loop ubuntu-19.04-desktop-amd64.iso disco
 
