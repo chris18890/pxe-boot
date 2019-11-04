@@ -20,13 +20,13 @@ default boot-screens/vesamenu.c32
 prompt 0
 timeout 0
 
-wget https://github.com/chris18890/boot-screens/archive/master.zip; # need to manually unzip in explorer & esnure folder is called "boot-screens"
+wget https://github.com/chris18890/boot-screens/archive/master.zip; # need to manually unzip in explorer & ensure folder is called "boot-screens"
 
 wget https://boot.netboot.xyz/memdisk
 
 wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip
 
-# need to manually unzip in explorer & esnure folder is called wimboot
+# need to manually unzip in explorer & ensure folder is called wimboot
 
 wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; mkdir avg; mv avg_arl_cdi_all_120_*.iso avg/avg_arl.iso
 
@@ -34,13 +34,13 @@ wget http://downloads.sourceforge.net/project/dban/dban/dban-2.3.0/dban-2.3.0_i5
 
 wget http://downloads.sourceforge.net/project/clonezilla/clonezilla_live_stable/2.6.4-10/clonezilla-live-2.6.4-10-amd64.zip
 
-# need to manually unzip in explorer & esnure folder is called clonezilla
+# need to manually unzip in explorer & ensure folder is called clonezilla
 
 mkdir /volume1/web/clonezilla; cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla; rm clonezilla-live-*.zip
 
 wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.0.0-5/gparted-live-1.0.0-5-amd64.zip
 
-# need to manually unzip in explorer & esnure folder is called gparted
+# need to manually unzip in explorer & ensure folder is called gparted
 
 mkdir /volume1/web/gparted; cp gparted/live/filesystem.squashfs /volume1/web/gparted; rm gparted-live-*.zip
 
@@ -48,7 +48,7 @@ wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; mkdir memtest; mv memtes
 
 wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip
 
-# need to manually unzip in explorer & esnure folder is called pogostick
+# need to manually unzip in explorer & ensure folder is called pogostick
 
 mkdir ubuntu-live/; cd ubuntu-live/
 
