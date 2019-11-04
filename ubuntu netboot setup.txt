@@ -26,7 +26,7 @@ sudo wget https://boot.netboot.xyz/memdisk
 
 sudo wget http://git.ipxe.org/releases/wimboot/wimboot-latest.zip
 
-sudo unzip wimboot-latest.zip -d wimboot/
+sudo unzip wimboot-latest.zip -d wimboot/; sudo rm wimboot-latest.zip
 
 sudo wget http://download.avg.com/filedir/inst/avg_arl_cdi_all_120_160420a12074.iso; sudo mkdir avg; sudo mv avg_arl_cdi_all_120_*.iso avg/avg_arl.iso
 
@@ -48,7 +48,7 @@ sudo wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir memtest;
 
 sudo wget http://pogostick.net/~pnh/ntpasswd/cd140201.zip
 
-sudo unzip cd140201.zip; sudo mkdir pogostick; sudo mv cd140201.iso pogostick
+sudo unzip cd140201.zip; sudo mkdir pogostick; sudo mv cd140201.iso pogostick; sudo rm cd140201.zip
 
 sudo mkdir ubuntu-live/; cd ubuntu-live/
 
