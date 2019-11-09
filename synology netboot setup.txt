@@ -1,3 +1,5 @@
+cd /volume1/web; sudo rm -rf clonezilla gparted
+
 cd /volume1/pxe; sudo rm -rf *
 
 sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe

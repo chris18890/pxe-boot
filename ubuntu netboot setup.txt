@@ -1,3 +1,5 @@
+cd /var/www/html; sudo rm -rf clonezilla gparted
+
 cd /var/lib/tftpboot; sudo rm -rf *
 
 sudo wget https://boot.netboot.xyz/ipxe/netboot.xyz.kpxe
