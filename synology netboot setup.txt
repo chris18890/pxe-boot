@@ -40,7 +40,7 @@ sudo 7z x clonezilla-live-*.zip -oclonezilla
 
 sudo mkdir /volume1/web/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /volume1/web/clonezilla; sudo rm clonezilla-live-*.zip
 
-sudo wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.0.0-5/gparted-live-1.0.0-5-amd64.zip
+sudo wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.1.0.1/gparted-live-1.1.0.1-amd64.zip
 
 sudo 7z x gparted-live-*.zip -ogparted
 
