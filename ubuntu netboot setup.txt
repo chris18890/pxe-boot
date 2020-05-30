@@ -38,13 +38,13 @@ sudo wget https://downloads.sourceforge.net/project/clonezilla/clonezilla_live_s
 
 sudo mkdir clonezilla; sudo unzip clonezilla-live-*.zip -d clonezilla/
 
-sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla; sudo rm clonezilla-live-*.zip
+sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla/; sudo rm clonezilla-live-*.zip
 
 sudo wget https://sourceforge.net/projects/gparted/files/gparted-live-stable/1.1.0-1/gparted-live-1.1.0-1-amd64.zip
 
 sudo mkdir gparted; sudo unzip gparted-live-*.zip -d gparted/
 
-sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted; sudo rm gparted-live-*.zip
+sudo mkdir /var/www/html/gparted; sudo cp gparted/live/filesystem.squashfs /var/www/html/gparted/; sudo rm gparted-live-*.zip
 
 sudo wget https://boot.netboot.xyz/utils/memtest86-5.01.bin; sudo mkdir memtest; sudo mv memtest86-5.01.bin memtest/memtest
 
