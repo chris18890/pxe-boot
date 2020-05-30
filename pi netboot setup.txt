@@ -40,7 +40,7 @@ sudo mkdir clonezilla; sudo unzip clonezilla-live-*.zip -d clonezilla/
 
 sudo mkdir /var/www/html/clonezilla; sudo cp clonezilla/live/filesystem.squashfs /var/www/html/clonezilla; sudo rm clonezilla-live-*.zip
 
-sudo wget http://downloads.sourceforge.net/project/gparted/gparted-live-stable/1.1.0.1/gparted-live-1.1.0.1-amd64.zip
+sudo wget https://sourceforge.net/projects/gparted/files/gparted-live-stable/1.1.0-1/gparted-live-1.1.0-1-amd64.zip
 
 sudo mkdir gparted; sudo unzip gparted-live-*.zip -d gparted/
 
