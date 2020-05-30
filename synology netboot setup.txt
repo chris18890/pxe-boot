@@ -12,7 +12,7 @@ sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/bio
 
 sudo rm -rf pxelinux.cfg; sudo cp -r ubuntu-installer/i386/pxelinux.cfg pxelinux.cfg
 
-sudo rm pxelinux.cfg/default; sudo touch pxelinux.cfg/default; sudo vi pxelinux.cfg/default
+sudo rm pxelinux.cfg/default; sudo touch pxelinux.cfg/default; sudo vim pxelinux.cfg/default
 
 # D-I config version 2.0
 # search path for the c32 support libraries (libcom32, libutil etc.)
