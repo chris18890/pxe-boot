@@ -60,6 +60,6 @@ sudo wget https://releases.ubuntu.com/focal/ubuntu-20.04.6-desktop-amd64.iso; su
 
 sudo wget https://releases.ubuntu.com/jammy/ubuntu-22.04.3-desktop-amd64.iso; sudo mkdir jammy; sudo mount -o loop ubuntu-22.04.3-desktop-amd64.iso jammy
 
-sudo wget https://releases.ubuntu.com/lunar/ubuntu-23.04-desktop-amd64.iso; sudo mkdir lunar; sudo mount -o loop ubuntu-23.04-desktop-amd64.iso lunar
+sudo wget https://releases.ubuntu.com/mantic/ubuntu-23.10-desktop-amd64.iso; sudo mkdir mantic; sudo mount -o loop ubuntu-23.10-desktop-amd64.iso mantic
 
 cd
