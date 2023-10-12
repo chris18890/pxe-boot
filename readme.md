@@ -1,7 +1,7 @@
 PXE-Boot
 =======
 
-repo containing scripts to set up PXE booting on Ubuntu Server, Raspain and 
+repo containing scripts to set up PXE booting on Ubuntu Server, Raspbian and 
 Synology NAS devices.
 
 - **Synology** assumes a root of `/volume1/pxe/`  
