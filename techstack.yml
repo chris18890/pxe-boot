@@ -1,12 +1,26 @@
 repo_name: chris18890/pxe-boot
-report_id: c09a39efcd87d2d607e793b4e7348244
+report_id: 5009aa36698cf5846555c6af9e3a26f9
+version: 0.1
 repo_type: Public
-timestamp: '2023-12-14T10:03:48+00:00'
+timestamp: '2024-01-04T15:17:26+00:00'
 requested_by: chris18890
 provider: github
 branch: main
-detected_tools_count: 1
+detected_tools_count: 3
 tools:
+- name: pgvector
+  description: Open-source vector similarity search for Postgres
+  website_url: https://github.com/pgvector/pgvector/
+  open_source: false
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png
+  detection_source_url: https://github.com/chris18890/pxe-boot/blob/main/pi netboot
+    setup.txt
+  detection_source: pi netboot setup.txt
+  last_updated_by: Chris Murray
+  last_updated_on: 2015-10-16 22:53:02.000000000 Z
 - name: Git
   description: Fast, scalable, distributed revision control system
   website_url: http://git-scm.com/
@@ -15,4 +29,18 @@ tools:
   category: Build, Test, Deploy
   sub_category: Version Control System
   image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/chris18890/pxe-boot
   detection_source: Repo Metadata
+- name: LangChain
+  description: Build AI apps with LLMs through composability
+  website_url: https://github.com/hwchase17/langchain
+  open_source: true
+  hosted_saas: false
+  category: Communications
+  sub_category: Large Language Model Tools
+  image_url: https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg
+  detection_source_url: https://github.com/chris18890/pxe-boot/blob/main/pi netboot
+    setup.txt
+  detection_source: pi netboot setup.txt
+  last_updated_by: Chris Murray
+  last_updated_on: 2015-10-16 22:53:02.000000000 Z
