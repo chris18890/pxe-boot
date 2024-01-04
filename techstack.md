@@ -3,9 +3,6 @@
 ## Tech Stack
 chris18890/pxe-boot is built on the following main stack:
 
-- [LangChain](https://github.com/hwchase17/langchain) – Large Language Model Tools
-- [pgvector](https://github.com/pgvector/pgvector/) – Database Tools
-
 Full tech stack [here](/techstack.md)
 
 &lt;--- Readme.md Snippet without images End ---&gt;
@@ -13,9 +10,6 @@ Full tech stack [here](/techstack.md)
 &lt;--- Readme.md Snippet with images Start ---&gt;
 ## Tech Stack
 chris18890/pxe-boot is built on the following main stack:
-
-- <img width='25' height='25' src='https://img.stackshare.io/service/48790/default_5b6c6b73f1ff3775c85d2a1ba954cb87e30cbf13.jpg' alt='LangChain'/> [LangChain](https://github.com/hwchase17/langchain) – Large Language Model Tools
-- <img width='25' height='25' src='https://img.stackshare.io/service/109221/default_b888cdf5617d936aa6aacf130911906955508639.png' alt='pgvector'/> [pgvector](https://github.com/pgvector/pgvector/) – Database Tools
 
 Full tech stack [here](/techstack.md)
 
