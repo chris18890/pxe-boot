@@ -12,6 +12,8 @@ sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/bio
 
 sudo rm -rf netboot.tar.gz; sudo wget http://archive.ubuntu.com/ubuntu/dists/focal/main/installer-amd64/current/legacy-images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
 
+sudo rm -rf netboot.tar.gz; sudo wget https://deb.debian.org/debian/dists/bookworm/main/installer-i386/current/images/netboot/netboot.tar.gz; sudo tar -xvzf netboot.tar.gz; sudo rm -rf netboot.tar.gz
+
 sudo rm -rf pxelinux.cfg; sudo cp -r ubuntu-installer/amd64/pxelinux.cfg pxelinux.cfg
 
 sudo rm pxelinux.cfg/default; sudo touch pxelinux.cfg/default; sudo vim pxelinux.cfg/default
