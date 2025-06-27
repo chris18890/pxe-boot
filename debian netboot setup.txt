@@ -42,6 +42,6 @@ sudo wget https://releases.ubuntu.com/focal/ubuntu-20.04.6-desktop-amd64.iso; su
 
 sudo wget https://releases.ubuntu.com/jammy/ubuntu-22.04.5-desktop-amd64.iso; sudo mkdir jammy; sudo mount -o loop ubuntu-22.04.5-desktop-amd64.iso jammy
 
-sudo wget https://releases.ubuntu.com/noble/ubuntu-24.04.1-desktop-amd64.iso; sudo mkdir noble; sudo mount -o loop ubuntu-24.04.1-desktop-amd64.iso noble
+sudo wget https://releases.ubuntu.com/noble/ubuntu-24.04.3-desktop-amd64.iso; sudo mkdir noble; sudo mount -o loop ubuntu-24.04.3-desktop-amd64.iso noble
 
 cd
