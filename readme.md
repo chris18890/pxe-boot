@@ -1,8 +1,8 @@
 PXE-Boot
 =======
 
-repo containing scripts & commands to set up PXE booting on Ubuntu Server, Debian and 
-Synology NAS devices. This project can chain boot into [netboot.xyz](https://netboot.xyz)
+A repo containing scripts & commands to set up PXE booting on Ubuntu, Debian, and Synology NAS devices. 
+This project can chain boot into [netboot.xyz](https://netboot.xyz)
 
 Note - this project only works when booting in BIOS mode, it does not work when booting in UEFI mode
 
@@ -19,5 +19,4 @@ Note - this project only works when booting in BIOS mode, it does not work when 
     - [This blog post](https://reintech.io/blog/setting-up-pxe-boot-server-ubuntu-22) is a good article for Ubuntu  
     - [This blog post](https://reintech.io/blog/configure-pxe-boot-server-ubuntu-2004) is also a good article Ubuntu  
 
-See [Bootscreens repo](https://github.com/chris18890/boot-screens) for menu 
-and display structure.
+See [Bootscreens repo](https://github.com/chris18890/boot-screens) for menu and display structure.
